@@ -1,4 +1,5 @@
-/* #B1BCE6;
+/*
+   #B1BCE6;
    #B7E5DD;
    #354259;
    #3d3c42;
@@ -18,15 +19,14 @@
 
 body {
   font-family: Cairo, sans-serif;
-  font-size: 62.5%; /* =16px */
-
+  font-size: 62.5%; /* 16px */
   color: #3d3c42;
 }
 
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 1fr 40% 1fr;
+  grid-template-rows: 10% 30% 1fr 30% 10%;
 
   grid-template-areas:
     'nav nav nav nav'
@@ -35,7 +35,6 @@ body {
     'contact contact contact contact'
     'footer footer footer footer';
   margin: 1rem 1rem;
-  /* border: 1px solid #5c6758; */
 }
 .nav {
   grid-area: nav;
@@ -51,7 +50,6 @@ body {
   grid-area: header;
   display: flex;
   justify-content: center;
-
   backface-visibility: hidden;
   background-color: #b7e5dd;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 72%);
@@ -63,7 +61,6 @@ body {
 .header-primary {
   font-size: 2.8rem;
   font-weight: 700;
-  /* margin: 1.5rem 0 5rem 0; */
   text-align: center;
   letter-spacing: 0.6rem;
   animation: moveFromTop 2.8s cubic-bezier(0.55, 0.16, 0.08, 0.84);
@@ -92,7 +89,7 @@ body {
 
   80% {
     opacity: 0.5;
-    transform: translateY(8rem);
+    transform: translateY(4rem);
   }
   100% {
     opacity: 1;
@@ -102,17 +99,17 @@ body {
 
 .main {
   grid-area: main;
-  border: 1px solid green;
+  display: flex;
+  justify-content: space-between;
 }
 
 .aside {
   grid-area: aside;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 .contact {
   grid-area: contact;
   background-color: #b1bce6;
-
   padding-top: 1.5rem;
 }
 
@@ -133,14 +130,12 @@ body {
   font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.3rem;
-  margin: 1.5rem 0;
 }
 
 .footer {
   grid-area: footer;
   font-size: 1rem;
-  text-align: center;
-  height: 4rem;
+  background-color: #b7e5dd;
 
   display: flex;
   justify-content: center;
