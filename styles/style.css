@@ -5,7 +5,7 @@
    #3d3c42;
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;500;700;800&display=swap');
 @import url('/styles/components.css');
 @import url('/styles/blog.css');
 
@@ -21,12 +21,13 @@ body {
   font-family: Cairo, sans-serif;
   font-size: 62.5%; /* 16px */
   color: #3d3c42;
+  background-color: #feffef;
 }
 
 .container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 10% 20% 1fr 30% 10%;
+  /* grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 15% 15% 1fr auto 10%; */
 
   grid-template-areas:
     'nav nav nav nav'
@@ -39,15 +40,16 @@ body {
 .nav {
   grid-area: nav;
   display: flex;
-
+  height: 9rem;
   justify-content: space-between;
   align-items: baseline;
   background-color: #b7e5dd;
-  padding: 2rem 1.5rem 0 1.5rem;
+  padding: 2rem 1.5rem 1rem 1.5rem;
 }
 
 .header {
   grid-area: header;
+  height: 15rem;
   display: flex;
   justify-content: center;
   backface-visibility: hidden;
@@ -118,8 +120,12 @@ body {
 
 .privicy {
   grid-template-columns: 40% repeat(3, 20%);
+
   display: grid;
+
   background-color: #b7e5dd;
+  margin: 2.5rem 0 0;
+  align-items: baseline;
 }
 
 .privicy-about {
@@ -132,6 +138,7 @@ body {
 
 .footer {
   grid-area: footer;
+  height: 6rem;
   font-size: 1rem;
   background-color: #b7e5dd;
 

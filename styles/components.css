@@ -80,6 +80,7 @@
 .contact-card {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .card-text {
   font-size: 0.9rem;
