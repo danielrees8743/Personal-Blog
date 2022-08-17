@@ -1,14 +1,6 @@
-/*
-   #B1BCE6;
-   #B7E5DD;
-   #354259;
-   #3d3c42;
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;500;700;800&display=swap');
 @import url('/styles/components.css');
 @import url('/styles/blog.css');
-/* @import url('/styles/media.css'); */
 
 :root {
   --primary: #b1bce6;

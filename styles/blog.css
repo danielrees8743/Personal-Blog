@@ -281,20 +281,7 @@ blockquote {
     margin-left: 1rem;
   }
 }
-/* @media only screen and (max-width: 1170px) {
-  .nav {
-    display: flex;
-  }
 
-  .blog-card {
-    width: 20rem;
-    margin: 1.8rem 0.9rem;
-  }
-  .blog-image {
-    width: 18rem;
-    margin: 0 auto;
-  }
-} */
 @media only screen and (max-width: 1024px) {
   .blog-container {
     display: flex;
