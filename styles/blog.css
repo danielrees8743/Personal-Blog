@@ -296,18 +296,3 @@ blockquote {
     width: 18rem;
   }
 }
-@media only screen and (max-width: 360px) {
-  .blog-card {
-    margin: 1rem -2.5rem;
-  }
-  .recent-post {
-    margin: 3rem 0.5rem;
-  }
-  .aside {
-    margin: 0 auto;
-  }
-  .header-nav {
-    flex-direction: column;
-    align-items: center;
-  }
-}
